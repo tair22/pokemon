@@ -103,7 +103,7 @@ def show_status(message):
 🍎 Голод: {pokemon.hunger}/100
 🏆 Побед: {pokemon.wins}
 🍽️ Кормлений: {pokemon.feed_count}
-⏰ Последнее кормление: {pokemon.last_feed_time}
+⏰ Последнее кормление: {pokemon.last_feed_time.strftime('%H:%M')}
 """
         
         if pokemon.hunger > 70:
