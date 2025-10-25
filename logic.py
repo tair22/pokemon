@@ -265,7 +265,7 @@ class Pokemon:
             return result_message
         else:
             next_feed_time = self.last_feed_time + delta_time
-            return f"⏰ Следующее кормление доступно в: {next_feed_time}"
+            return f"⏰ Следующее кормление доступно в: {next_feed_time.strftime('%H:%M')}"
 
     def update_hunger(self):
         current_time = datetime.datetime.now()
